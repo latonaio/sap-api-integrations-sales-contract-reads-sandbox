@@ -1,0 +1,32 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-contract-reads/SAP_API_Caller/caller.go#L65",
+	"function": "sap-api-integrations-sales-contract-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": [
+		{
+			"SalesContract": "40000000",
+			"PartnerFunction": "SP",
+			"Customer": "17100001",
+			"Supplier": ""
+		},
+		{
+			"SalesContract": "40000000",
+			"PartnerFunction": "SH",
+			"Customer": "17100001",
+			"Supplier": ""
+		},
+		{
+			"SalesContract": "40000000",
+			"PartnerFunction": "BP",
+			"Customer": "17100001",
+			"Supplier": ""
+		},
+		{
+			"SalesContract": "40000000",
+			"PartnerFunction": "PY",
+			"Customer": "17100001",
+			"Supplier": ""
+		}
+	],
+	"time": "2021-12-17T12:24:17.956227+09:00"
+}
