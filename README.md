@@ -95,3 +95,56 @@ func (c *SAPAPICaller) AsyncGetSalesContract(salesContract, salesContractItem st
 	wg.Wait()
 }
 ```
+
+## Output  
+本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+以下の sample.json の例は、SAP 販売契約 の ヘッダデータ が取得された結果の JSON の例です。  
+以下の項目のうち、"SalesContract" ～ "to_Item" は、/SAP_API_Output_Formatter/type.go 内 の Type Product {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+
+```
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-contract-reads/SAP_API_Caller/caller.go#L58",
+	"function": "sap-api-integrations-sales-contract-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": [
+		{
+			"SalesContract": "40000000",
+			"SalesContractType": "CQ",
+			"SalesOrganization": "1710",
+			"DistributionChannel": "10",
+			"OrganizationDivision": "00",
+			"SalesGroup": "",
+			"SalesOffice": "",
+			"SalesDistrict": "",
+			"SoldToParty": "17100001",
+			"CreationDate": "/Date(1498176000000)/",
+			"LastChangeDate": "",
+			"PurchaseOrderByCustomer": "123",
+			"CustomerPurchaseOrderDate": "",
+			"SalesContractDate": "/Date(1498176000000)/",
+			"TotalNetAmount": "1755.00",
+			"TransactionCurrency": "USD",
+			"SDDocumentReason": "",
+			"PricingDate": "/Date(1498176000000)/",
+			"IncotermsClassification": "EXW",
+			"CustomerPaymentTerms": "0004",
+			"PaymentMethod": "",
+			"SalesContractValidityStartDate": "/Date(1498176000000)/",
+			"SalesContractValidityEndDate": "/Date(1501459200000)/",
+			"SalesContractSignedDate": "",
+			"ReferenceSDDocument": "",
+			"ReferenceSDDocumentCategory": "",
+			"SalesDocApprovalStatus": "",
+			"SalesContractApprovalReason": "",
+			"OverallSDProcessStatus": "A",
+			"TotalCreditCheckStatus": "",
+			"OverallSDDocumentRejectionSts": "A",
+			"to_Partner": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_Contract_SRV/A_SalesContract('40000000')/to_Partner",
+			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_Contract_SRV/A_SalesContract('40000000')/to_Item"
+		}
+	],
+	"time": "2021-12-17T12:24:17.442821+09:00"
+}
+
+```
+
