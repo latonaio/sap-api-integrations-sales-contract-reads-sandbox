@@ -81,7 +81,7 @@ func (c *SAPAPICaller) Header(salesContract string) {
 }
 
 func (c *SAPAPICaller) callSalesContractSrvAPIRequirementHeader(api, salesContract string) ([]sap_api_output_formatter.Header, error) {
-	url := strings.Join([]string{c.baseURL, "API_SALES_Contract_SRV", api}, "/")
+	url := strings.Join([]string{c.baseURL, "API_SALES_CONTRACT_SRV", api}, "/")
 	req, _ := http.NewRequest("GET", url, nil)
 
 	c.setHeaderAPIKeyAccept(req)
