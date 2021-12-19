@@ -36,7 +36,7 @@ sap-api-integrations-sales-contract-reads において、API への値入力条�
 ### SDC レイアウト
 
 * inoutSDC.SalesContract.SalesContract（販売基本契約番号）
-* inoutSDC.SalesContract.SalesContractItem.SalesContractItem（受注明細）
+* inoutSDC.SalesContract.SalesContractItem.SalesContractItem（販売基本契約明細）
 
 ## SAP API Bussiness Hub の API の選択的コール
 
