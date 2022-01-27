@@ -96,9 +96,9 @@ func (c *SAPAPICaller) AsyncGetSalesContract(salesContract, salesContractItem st
 }
 ```
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 販売基本契約 の ヘッダ が取得された結果の JSON の例です。  
-以下の項目のうち、"SalesContract" ～ "to_Item" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"SalesContract" ～ "to_Item" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
@@ -116,20 +116,20 @@ func (c *SAPAPICaller) AsyncGetSalesContract(salesContract, salesContractItem st
 			"SalesOffice": "",
 			"SalesDistrict": "",
 			"SoldToParty": "17100001",
-			"CreationDate": "/Date(1498176000000)/",
+			"CreationDate": "2017-06-23T09:00:00+09:00",
 			"LastChangeDate": "",
 			"PurchaseOrderByCustomer": "123",
 			"CustomerPurchaseOrderDate": "",
-			"SalesContractDate": "/Date(1498176000000)/",
+			"SalesContractDate": "2017-06-23T09:00:00+09:00",
 			"TotalNetAmount": "1755.00",
 			"TransactionCurrency": "USD",
 			"SDDocumentReason": "",
-			"PricingDate": "/Date(1498176000000)/",
+			"PricingDate": "2017-06-23T09:00:00+09:00",
 			"IncotermsClassification": "EXW",
 			"CustomerPaymentTerms": "0004",
 			"PaymentMethod": "",
-			"SalesContractValidityStartDate": "/Date(1498176000000)/",
-			"SalesContractValidityEndDate": "/Date(1501459200000)/",
+			"SalesContractValidityStartDate": "2017-06-23T09:00:00+09:00",
+			"SalesContractValidityEndDate": "2017-07-31T09:00:00+09:00",
 			"SalesContractSignedDate": "",
 			"ReferenceSDDocument": "",
 			"ReferenceSDDocumentCategory": "",
@@ -138,11 +138,10 @@ func (c *SAPAPICaller) AsyncGetSalesContract(salesContract, salesContractItem st
 			"OverallSDProcessStatus": "A",
 			"TotalCreditCheckStatus": "",
 			"OverallSDDocumentRejectionSts": "A",
-			"to_Partner": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_Contract_SRV/A_SalesContract('40000000')/to_Partner",
-			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_Contract_SRV/A_SalesContract('40000000')/to_Item"
+			"to_Partner": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_CONTRACT_SRV/A_SalesContract('40000000')/to_Partner",
+			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_CONTRACT_SRV/A_SalesContract('40000000')/to_Item"
 		}
 	],
-	"time": "2021-12-17T12:24:17.442821+09:00"
+	"time": "2022-01-27T22:38:44+09:00"
 }
-
 ```

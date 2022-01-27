@@ -11,7 +11,7 @@
 			"PurchaseOrderByCustomer": "123",
 			"Material": "TG12",
 			"MaterialByCustomer": "HANACT2",
-			"PricingDate": "/Date(1498176000000)/",
+			"PricingDate": "2017-06-23T09:00:00+09:00",
 			"RequestedQuantity": "100",
 			"RequestedQuantityUnit": "PC",
 			"ItemGrossWeight": "100.000",
@@ -42,5 +42,5 @@
 			"to_PricingElement": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_CONTRACT_SRV/A_SalesContractItem(SalesContract='40000000',SalesContractItem='10')/to_PricingElement"
 		}
 	],
-	"time": "2021-12-17T12:31:36.42773+09:00"
+	"time": "2022-01-27T22:37:52+09:00"
 }

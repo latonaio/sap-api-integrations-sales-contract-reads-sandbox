@@ -13,20 +13,20 @@
 			"SalesOffice": "",
 			"SalesDistrict": "",
 			"SoldToParty": "17100001",
-			"CreationDate": "/Date(1498176000000)/",
+			"CreationDate": "2017-06-23T09:00:00+09:00",
 			"LastChangeDate": "",
 			"PurchaseOrderByCustomer": "123",
 			"CustomerPurchaseOrderDate": "",
-			"SalesContractDate": "/Date(1498176000000)/",
+			"SalesContractDate": "2017-06-23T09:00:00+09:00",
 			"TotalNetAmount": "1755.00",
 			"TransactionCurrency": "USD",
 			"SDDocumentReason": "",
-			"PricingDate": "/Date(1498176000000)/",
+			"PricingDate": "2017-06-23T09:00:00+09:00",
 			"IncotermsClassification": "EXW",
 			"CustomerPaymentTerms": "0004",
 			"PaymentMethod": "",
-			"SalesContractValidityStartDate": "/Date(1498176000000)/",
-			"SalesContractValidityEndDate": "/Date(1501459200000)/",
+			"SalesContractValidityStartDate": "2017-06-23T09:00:00+09:00",
+			"SalesContractValidityEndDate": "2017-07-31T09:00:00+09:00",
 			"SalesContractSignedDate": "",
 			"ReferenceSDDocument": "",
 			"ReferenceSDDocumentCategory": "",
@@ -35,9 +35,9 @@
 			"OverallSDProcessStatus": "A",
 			"TotalCreditCheckStatus": "",
 			"OverallSDDocumentRejectionSts": "A",
-			"to_Partner": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_Contract_SRV/A_SalesContract('40000000')/to_Partner",
-			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_Contract_SRV/A_SalesContract('40000000')/to_Item"
+			"to_Partner": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_CONTRACT_SRV/A_SalesContract('40000000')/to_Partner",
+			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_CONTRACT_SRV/A_SalesContract('40000000')/to_Item"
 		}
 	],
-	"time": "2021-12-17T12:24:17.442821+09:00"
+	"time": "2022-01-27T22:38:44+09:00"
 }
